@@ -1,4 +1,3 @@
-#include <iostream>
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
@@ -6,7 +5,7 @@ using namespace sf;
 int main()
 {
 	// Объект, который, собственно, является главным окном приложения
-	RenderWindow window(VideoMode(200, 200), "SFML Works!");
+	RenderWindow window(VideoMode(200, 200), "SFML Works!", sf::Style::Fullscreen);
 
 	// Главный цикл приложения. Выполняется, пока открыто окно
 	while (window.isOpen())
@@ -22,7 +21,7 @@ int main()
 		}
 		window.clear(Color(250, 220, 100, 0));
 
-		// Отрисовка окна	
+		// Отрисовка окна
 		window.display();
 	}
 
