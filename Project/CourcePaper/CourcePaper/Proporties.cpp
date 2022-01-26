@@ -14,7 +14,7 @@ int loadConfigurate() {
 	std::ifstream inData(config);
 	
 	if (!inData)
-		return (defaultConfigurate()) ? 1 : 0;
+		return (defaultConfigurate()) ? 1 : -1;
 
 	//Обычная загрузка
 

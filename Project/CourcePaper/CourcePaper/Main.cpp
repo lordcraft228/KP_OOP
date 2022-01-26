@@ -1,29 +1,36 @@
+#include "imgui.h"
+#include "imgui-SFML.h"
+#include "Menu.h"
+
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
+//using namespace ImGui::SFML;
 
 int main()
 {
 	// Объект, который, собственно, является главным окном приложения
 	RenderWindow window(VideoMode(200, 200), "SFML Works!", sf::Style::Fullscreen);
+	
+	menu(window);
+	//// Главный цикл приложения. Выполняется, пока открыто окно
+	//while (window.isOpen())
+	//{
+	//	// Обрабатываем очередь событий в цикле
+	//	Event event;
+	//	while (window.pollEvent(event))
+	//	{
 
-	// Главный цикл приложения. Выполняется, пока открыто окно
-	while (window.isOpen())
-	{
-		// Обрабатываем очередь событий в цикле
-		Event event;
-		while (window.pollEvent(event))
-		{
-			// Пользователь нажал на «крестик» и хочет закрыть окно?
-			if (event.type == Event::Closed)
-				// тогда закрываем его
-				window.close();
-		}
-		window.clear(Color(250, 220, 100, 0));
+	//		// Пользователь нажал на «крестик» и хочет закрыть окно?
+	//		if (event.type == Event::Closed)
+	//			// тогда закрываем его
+	//			window.close();
+	//	}
+	//	window.clear(Color(250, 220, 100, 0));
 
-		// Отрисовка окна
-		window.display();
-	}
-
+	//	// Отрисовка окна
+	//	window.display();
+	//}
+	
 	return 0;
 }
