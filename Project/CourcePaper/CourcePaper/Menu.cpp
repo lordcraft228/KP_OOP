@@ -27,8 +27,8 @@ void menu(RenderWindow& window) {
             ImGui::SFML::ProcessEvent(event);
             if (event.type == Event::Closed)
                 window.close();
-
         }
+
         ImGui::SFML::Update(window, deltaClock.restart());
         ImGui::Begin(u8"Начало");
         if (ImGui::Button(u8"Играть")) {
