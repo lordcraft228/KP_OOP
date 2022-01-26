@@ -8,7 +8,7 @@ using namespace sf;
 void menu(RenderWindow& window) {
 	ImGui::SFML::Init(window);
 	
-	/ImGuiIO& io = ImGui::GetIO(); 
+	//ImGuiIO& io = ImGui::GetIO(); 
 	//ImFont *f1 = io.Fonts->AddFontFromFileTTF("resource\\font2.ttf", 20);
 
 	Clock deltaClock;
