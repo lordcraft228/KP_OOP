@@ -8,8 +8,10 @@ using namespace sf;
 void menu(RenderWindow& window) {
 	ImGui::SFML::Init(window);
 	
-	//ImGuiIO& io = ImGui::GetIO(); 
-	//ImFont *f1 = io.Fonts->AddFontFromFileTTF("resource\\font2.ttf", 20);
+	ImGuiIO& io = ImGui::GetIO(); 
+	io.Fonts->Clear();
+	ImFont *f1 = io.Fonts->AddFontFromFileTTF("resource\\font2.ttf", 20);
+	ImGui::SFML::UpdateFontTexture();
 
 	Clock deltaClock;
 	Sprite btnPlay, btnSetting, btnExit;
@@ -29,8 +31,8 @@ void menu(RenderWindow& window) {
 
 		//Основное окно
 		//ImGui::PushFont(f1);
-		ImGui::Begin("Начало"); 
-		if (ImGui::Button("Играть")) {
+		ImGui::Begin("Проблема решена"); 
+		if (ImGui::Button("Честно говоря, я даже не знаю в чём она заключалась.")) {
 		
 		}
 		ImGui::End();
