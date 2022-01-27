@@ -1,3 +1,5 @@
+#define DEBUG_MI
+
 #include "imgui.h"
 #include "imgui-SFML.h"
 

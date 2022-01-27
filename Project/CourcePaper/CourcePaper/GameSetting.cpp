@@ -15,7 +15,7 @@ int saveConfigurate() {
 	if (!outData)
 		return 1;
 
-	outData << confSetting.windowWidth;
+	outData << confSetting.windowWidth << '\n';
 	outData << confSetting.windowHeight;
 
 	return 0;
@@ -40,7 +40,6 @@ int loadConfigurate() {
 
 	return 0;
 }
-
 configurateStruct getSetting() {
 	return confSetting;
 }
