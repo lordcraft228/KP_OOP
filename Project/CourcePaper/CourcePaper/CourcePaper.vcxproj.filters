@@ -45,6 +45,9 @@
     <ClCompile Include="bit_SFML-2.5.1\imgui\imgui-SFML.cpp">
       <Filter>Исходные файлы\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="GameSetting.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
@@ -370,6 +373,9 @@
     </ClInclude>
     <ClInclude Include="bit_SFML-2.5.1\include\SFML\Window\WindowStyle.hpp">
       <Filter>Файлы заголовков\ImGui_SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSetting.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

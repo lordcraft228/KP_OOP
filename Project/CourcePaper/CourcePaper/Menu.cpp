@@ -1,6 +1,8 @@
 #include "imgui.h"
 #include "imgui-SFML.h"
 
+#include "GameSetting.h"
+
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
@@ -27,7 +29,7 @@ void menu(RenderWindow& window) {
 
         ImGui::SFML::Update(window, deltaClock.restart());
         ImGui::SetNextWindowPos(ImVec2(0, 0));
-        ImGui::SetNextWindowSize(ImVec2(600, 800));
+        ImGui::SetNextWindowSize(ImVec2(100, 100));
         ImGui::Begin(u8"Начало"); 
         if (ImGui::Button(u8"Играть")) {
 
