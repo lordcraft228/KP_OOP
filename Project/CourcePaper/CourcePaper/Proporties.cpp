@@ -16,6 +16,7 @@ int loadConfigurate() {
 	if (!inData)
 		return (defaultConfigurate()) ? 1 : -1;
 
+	configurateStruct conf;
 	//Обычная загрузка
 
 	return 0;

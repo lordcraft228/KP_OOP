@@ -1,5 +1,9 @@
 #pragma once
 
+struct configurateStruct{
+	int screenScaleType;		//Тип разрешения экрана
+};
+
 //Имя файла конфигурации
 const char config[] = "config.txt";
 
