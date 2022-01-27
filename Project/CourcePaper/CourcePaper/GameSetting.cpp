@@ -1,5 +1,7 @@
-#include <fstream>
 #include "GameSetting.h"
+
+#include <SFML/Graphics.hpp>
+#include <fstream>
 
 //Имя файла конфигурации
 const char config[] = "config.txt";
@@ -20,8 +22,9 @@ int saveConfigurate() {
 }
 
 int defaultConfigurate() {
-	confSetting.windowWidth = 800;
-	confSetting.windowHeight = 600;
+	sf::VideoMode tmp = sf::VideoMode().getDesktopMode();
+	confSetting.windowWidth = tmp.width;
+	confSetting.windowHeight = tmp.height;
 
 	return (saveConfigurate()) ? 1 : 0;
 }
