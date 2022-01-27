@@ -34,6 +34,9 @@ void menu(RenderWindow& window) {
         if (ImGui::Button(u8"Играть")) {
 
         }
+        if (ImGui::Button(u8"Выход")) {
+            window.close();
+        }
         ImGui::End();
 
         window.clear();
